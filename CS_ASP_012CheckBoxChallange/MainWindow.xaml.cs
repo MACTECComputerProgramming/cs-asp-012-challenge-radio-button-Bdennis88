@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CS_ASP_012CheckBoxChallange
+namespace CS_ASP_012
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,31 @@ namespace CS_ASP_012CheckBoxChallange
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void labelButton1_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (radioButton1.IsChecked == true)
+
+                labelAnswer.Content = "Pencil, Very reliable";
+
+            if (radioButton2.IsChecked == true)
+
+                labelAnswer.Content = "Pen, nice choice";
+
+            if (radioButton3.IsChecked == true)
+
+                labelAnswer.Content = " Phone, must be from the future";
+
+            if (radioButton4.IsChecked == true)
+
+                labelAnswer.Content = "Pad, Welcome to 2020!";
+
+
+
+
+
         }
     }
 }
