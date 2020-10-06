@@ -22,28 +22,41 @@ namespace CS_ASP_012
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();            
+            pencilImage.Opacity = 0;
+            penImage.Opacity = 0;
+            phoneImage.Opacity = 0;
+            padImage.Opacity = 0; 
+
         }
 
         private void labelButton1_Click(object sender, RoutedEventArgs e)
         {
 
             if (radioButton1.IsChecked == true)
-
+            {
                 labelAnswer.Content = "Pencil, Very reliable";
 
+                pencilImage.Opacity = 100;
+            }
             if (radioButton2.IsChecked == true)
-
+            {
                 labelAnswer.Content = "Pen, nice choice";
 
+                penImage.Opacity = 100;
+            }
             if (radioButton3.IsChecked == true)
-
+            {
                 labelAnswer.Content = " Phone, must be from the future";
 
+                phoneImage.Opacity = 100;
+            }
             if (radioButton4.IsChecked == true)
-
+            {
                 labelAnswer.Content = "Pad, Welcome to 2020!";
 
+                padImage.Opacity = 100;
+            }
 
 
 
