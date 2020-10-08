@@ -1,0 +1,22 @@
+﻿<Window x:Class="CS_ASP_016.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS_ASP_016"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Calendar x:Name="myCalendar" HorizontalAlignment="Left" Margin="72,141,0,0"
+                  VerticalAlignment="Top"
+                  SelectionMode="SingleDate"
+                  SelectedDatesChanged="myCalendar_SelectedDatesChanged"/>
+        <Label x:Name="resultLabel" Content="{}{ResultLabel}" HorizontalAlignment="Left" 
+               Margin="72,305,0,0" VerticalAlignment="Top" FontSize="16"    />
+        <Calendar x:Name="mySecondCalendar" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top"
+                  SelectionMode="SingleDate" 
+                  SelectedDatesChanged="mySecondCalendar_SelectedDatesChanged"/>
+        <Button x:Name="button" Content="Push Me" HorizontalAlignment="Center" Margin="0,333,0,0" VerticalAlignment="Top" Height="38" Width="179" Click="button_Click"/>
+
+    </Grid>
+</Window>
